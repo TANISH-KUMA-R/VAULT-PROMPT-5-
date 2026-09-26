@@ -1,0 +1,754 @@
+{
+  "policy": {
+    "replicas": 3,
+    "writeQuorum": 2,
+    "readQuorum": 2,
+    "failureDomain": "zone",
+    "repairMode": "balanced"
+  },
+  "nodes": [
+    {
+      "id": "osd-01",
+      "zone": "west-1a",
+      "state": "healthy",
+      "capacity": 18,
+      "used": 11.2,
+      "latency": 12
+    },
+    {
+      "id": "osd-02",
+      "zone": "west-1b",
+      "state": "healthy",
+      "capacity": 18,
+      "used": 9.6,
+      "latency": 18
+    },
+    {
+      "id": "osd-03",
+      "zone": "east-1a",
+      "state": "healthy",
+      "capacity": 24,
+      "used": 13.1,
+      "latency": 24
+    },
+    {
+      "id": "osd-04",
+      "zone": "east-1b",
+      "state": "healthy",
+      "capacity": 24,
+      "used": 8.7,
+      "latency": 31
+    },
+    {
+      "id": "osd-05",
+      "zone": "north-1a",
+      "state": "healthy",
+      "capacity": 32,
+      "used": 17.4,
+      "latency": 16
+    },
+    {
+      "id": "osd-06",
+      "zone": "north-1b",
+      "state": "healthy",
+      "capacity": 32,
+      "used": 14.3,
+      "latency": 21
+    }
+  ],
+  "objects": [
+    {
+      "id": "53f9d8c1-8154-4182-8df7-74541d562021",
+      "key": "bundles/sub-all-1a6a773c/package.json",
+      "size": 618,
+      "checksum": "3af66bde1d39fa70",
+      "version": 1,
+      "replicas": 3,
+      "healthy": true,
+      "updatedAt": "2026-09-26T01:04:43.071Z",
+      "body": "{\"subId\":\"sub-all-1a6a773c\",\"type\":\"everything\",\"title\":\"Full Corporate Onboarding Bundle\",\"document\":{\"title\":\"Master Agreement\",\"category\":\"Contract\",\"notes\":\"\",\"file\":{\"name\":\"agreement.pdf\",\"size\":52,\"type\":\"application/pdf\",\"checksum\":\"24b54ad382417022\",\"data\":\"data:application/pdf;base64,JVBERi0xLjQgYWdyZWVtZW50\"}},\"payment\":{\"reference\":\"TX-ALL-8899\",\"amount\":\"15000.00\",\"currency\":\"USD\",\"method\":\"ACH Transfer\",\"notes\":\"\",\"file\":null},\"details\":{\"fullName\":\"Global Logistics Corp\",\"email\":\"billing@global-logistics.com\",\"accountNumber\":\"CORP-8800\",\"category\":\"Comprehensive Bundle\",\"details\":\"\",\"file\":null}}"
+    },
+    {
+      "id": "a07059b5-4cf2-45f3-9068-3186dba81537",
+      "key": "details/sub-det-46e143d4/profile.json",
+      "size": 363,
+      "checksum": "dfe02404c6912b46",
+      "version": 1,
+      "replicas": 3,
+      "healthy": true,
+      "updatedAt": "2026-09-26T01:04:43.051Z",
+      "body": "{\"subId\":\"sub-det-46e143d4\",\"type\":\"details\",\"fullName\":\"Sarah Connor\",\"email\":\"sarah@cyberdyne.org\",\"accountNumber\":\"ACC-800\",\"category\":\"Customer KYC\",\"details\":\"Critical verification review\",\"file\":{\"name\":\"metadata.json\",\"size\":61,\"type\":\"application/json\",\"checksum\":\"3296247023e1126d\",\"data\":\"data:application/json;base64,eyJzZWN1cml0eUxldmVsIjoiQSsifQ==\"}}"
+    },
+    {
+      "id": "ec6703b9-6d4c-44f0-9395-2820ced48c44",
+      "key": "payments/sub-pay-0feb0d94/TX-998811",
+      "size": 293,
+      "checksum": "1ca946bce66523b1",
+      "version": 1,
+      "replicas": 3,
+      "healthy": true,
+      "updatedAt": "2026-09-26T01:04:43.021Z",
+      "body": "{\"subId\":\"sub-pay-0feb0d94\",\"type\":\"payment\",\"reference\":\"TX-998811\",\"amount\":\"750.00\",\"currency\":\"USD\",\"method\":\"Wire Transfer\",\"notes\":\"Q3 retainage payment\",\"file\":{\"name\":\"receipt.png\",\"size\":34,\"type\":\"image/png\",\"checksum\":\"dcddc87dfd1e0fa6\",\"data\":\"data:image/png;base64,cG5nLWJ5dGVz\"}}"
+    },
+    {
+      "id": "cb578bd2-62ac-4688-8ad2-078b6b294a9c",
+      "key": "docs/sub-doc-8091307a/passport.pdf",
+      "size": 323,
+      "checksum": "17f5fc8e8b4d7e4d",
+      "version": 1,
+      "replicas": 3,
+      "healthy": true,
+      "updatedAt": "2026-09-26T01:04:43.011Z",
+      "body": "{\"subId\":\"sub-doc-8091307a\",\"type\":\"document\",\"title\":\"Certified Passport Scan\",\"category\":\"Identification\",\"notes\":\"Verified via national registry\",\"file\":{\"name\":\"passport.pdf\",\"size\":68,\"type\":\"application/pdf\",\"checksum\":\"6f1acea180d3a9a6\",\"data\":\"data:application/pdf;base64,JVBERi0xLjQgbW9jayBwYXNzcG9ydCBiaW5hcnk=\"}}"
+    },
+    {
+      "id": "72e75001-f7e2-45f7-ac4a-7c0329f96f76",
+      "key": "bundles/sub-all-592938ed/package.json",
+      "size": 415,
+      "checksum": "680665cbaab0ddf6",
+      "version": 1,
+      "replicas": 3,
+      "healthy": true,
+      "updatedAt": "2026-09-25T23:41:32.694Z",
+      "body": "{\"subId\":\"sub-all-592938ed\",\"type\":\"everything\",\"title\":\"Comprehensive Package Submission\",\"document\":{\"title\":\"Attached Document\",\"category\":\"Package Document\",\"notes\":\"\",\"file\":null},\"payment\":{\"reference\":\"TX-435265\",\"amount\":\"0.00\",\"currency\":\"USD\",\"method\":\"Credit Card\",\"notes\":\"\",\"file\":null},\"details\":{\"fullName\":\"\",\"email\":\"\",\"accountNumber\":\"\",\"category\":\"Comprehensive Bundle\",\"details\":\"\",\"file\":null}}"
+    },
+    {
+      "id": "4a48db53-946f-41a3-9f67-f7fb1c4cb354",
+      "key": "bundles/sub-all-1abec47f/package.json",
+      "size": 618,
+      "checksum": "fb04885e585540de",
+      "version": 1,
+      "replicas": 3,
+      "healthy": true,
+      "updatedAt": "2026-09-25T23:40:34.689Z",
+      "body": "{\"subId\":\"sub-all-1abec47f\",\"type\":\"everything\",\"title\":\"Full Corporate Onboarding Bundle\",\"document\":{\"title\":\"Master Agreement\",\"category\":\"Contract\",\"notes\":\"\",\"file\":{\"name\":\"agreement.pdf\",\"size\":52,\"type\":\"application/pdf\",\"checksum\":\"24b54ad382417022\",\"data\":\"data:application/pdf;base64,JVBERi0xLjQgYWdyZWVtZW50\"}},\"payment\":{\"reference\":\"TX-ALL-8899\",\"amount\":\"15000.00\",\"currency\":\"USD\",\"method\":\"ACH Transfer\",\"notes\":\"\",\"file\":null},\"details\":{\"fullName\":\"Global Logistics Corp\",\"email\":\"billing@global-logistics.com\",\"accountNumber\":\"CORP-8800\",\"category\":\"Comprehensive Bundle\",\"details\":\"\",\"file\":null}}"
+    },
+    {
+      "id": "37488899-3c58-41de-9f3a-6c9c6368ef02",
+      "key": "details/sub-det-8d361b7a/profile.json",
+      "size": 363,
+      "checksum": "ed0468fa7eae80ee",
+      "version": 1,
+      "replicas": 3,
+      "healthy": true,
+      "updatedAt": "2026-09-25T23:40:34.683Z",
+      "body": "{\"subId\":\"sub-det-8d361b7a\",\"type\":\"details\",\"fullName\":\"Sarah Connor\",\"email\":\"sarah@cyberdyne.org\",\"accountNumber\":\"ACC-800\",\"category\":\"Customer KYC\",\"details\":\"Critical verification review\",\"file\":{\"name\":\"metadata.json\",\"size\":61,\"type\":\"application/json\",\"checksum\":\"3296247023e1126d\",\"data\":\"data:application/json;base64,eyJzZWN1cml0eUxldmVsIjoiQSsifQ==\"}}"
+    },
+    {
+      "id": "4e2632e9-330a-461b-8a47-d2c311bdd562",
+      "key": "payments/sub-pay-2406d4ab/TX-998811",
+      "size": 293,
+      "checksum": "7a770a01f4951c0a",
+      "version": 1,
+      "replicas": 3,
+      "healthy": true,
+      "updatedAt": "2026-09-25T23:40:34.665Z",
+      "body": "{\"subId\":\"sub-pay-2406d4ab\",\"type\":\"payment\",\"reference\":\"TX-998811\",\"amount\":\"750.00\",\"currency\":\"USD\",\"method\":\"Wire Transfer\",\"notes\":\"Q3 retainage payment\",\"file\":{\"name\":\"receipt.png\",\"size\":34,\"type\":\"image/png\",\"checksum\":\"dcddc87dfd1e0fa6\",\"data\":\"data:image/png;base64,cG5nLWJ5dGVz\"}}"
+    },
+    {
+      "id": "0c7eddfd-0fb7-4d8a-9e5d-f0ebb0eb84ce",
+      "key": "docs/sub-doc-c67c0df1/passport.pdf",
+      "size": 323,
+      "checksum": "8bb14f3ed21297df",
+      "version": 1,
+      "replicas": 3,
+      "healthy": true,
+      "updatedAt": "2026-09-25T23:40:34.655Z",
+      "body": "{\"subId\":\"sub-doc-c67c0df1\",\"type\":\"document\",\"title\":\"Certified Passport Scan\",\"category\":\"Identification\",\"notes\":\"Verified via national registry\",\"file\":{\"name\":\"passport.pdf\",\"size\":68,\"type\":\"application/pdf\",\"checksum\":\"6f1acea180d3a9a6\",\"data\":\"data:application/pdf;base64,JVBERi0xLjQgbW9jayBwYXNzcG9ydCBiaW5hcnk=\"}}"
+    }
+  ],
+  "events": [
+    {
+      "id": "f45bd257-2d1b-407f-a312-ff864ac37805",
+      "kind": "write",
+      "message": "Complete package submitted: “Full Corporate Onboarding Bundle” (Doc + Payment + Details) · 3 replicas · sha 3af66bde1d39fa70",
+      "time": "2026-09-26T01:04:43.071Z"
+    },
+    {
+      "id": "edabe358-1d97-49b9-af7f-2bd917c9131c",
+      "kind": "write",
+      "message": "Details submitted: Sarah Connor · Customer KYC · 3 replicas · sha dfe02404c6912b46",
+      "time": "2026-09-26T01:04:43.051Z"
+    },
+    {
+      "id": "78e1a9aa-e370-4bce-87e1-61983c96d081",
+      "kind": "write",
+      "message": "Payment submitted: TX-998811 (750.00 USD via Wire Transfer) · receipt.png · 3 replicas · sha 1ca946bce66523b1",
+      "time": "2026-09-26T01:04:43.021Z"
+    },
+    {
+      "id": "af03e206-cb7d-4bcb-b099-c3175b4cba88",
+      "kind": "write",
+      "message": "Document submitted: “Certified Passport Scan” · passport.pdf · 3 replicas · sha 17f5fc8e8b4d7e4d",
+      "time": "2026-09-26T01:04:43.011Z"
+    },
+    {
+      "id": "1464b7b3-3f01-443c-ae8f-a062cee2d796",
+      "kind": "delete",
+      "message": "Deleted submission “sub-all-3baefa2d” (everything)",
+      "time": "2026-09-26T01:03:04.228Z"
+    },
+    {
+      "id": "0e38ab48-4139-4402-b690-d147e2ecb653",
+      "kind": "delete",
+      "message": "Deleted submission “sub-det-3461a122” (details)",
+      "time": "2026-09-26T01:03:04.211Z"
+    },
+    {
+      "id": "1a9030bd-4a22-4111-b100-952daa5be411",
+      "kind": "delete",
+      "message": "Deleted submission “sub-pay-db2fefc8” (payment)",
+      "time": "2026-09-26T01:03:04.199Z"
+    },
+    {
+      "id": "7c792926-6d30-4a8e-988a-5b717189c404",
+      "kind": "delete",
+      "message": "Deleted submission “sub-doc-a559ad4f” (document)",
+      "time": "2026-09-26T01:03:04.193Z"
+    },
+    {
+      "id": "efce5518-2dfd-4a81-affd-08d11dc626a9",
+      "kind": "failure",
+      "message": "osd-05 rejoined the cluster",
+      "time": "2026-09-26T01:03:04.176Z"
+    },
+    {
+      "id": "9490c7af-d0c4-4b48-a855-62f99bcd8d3e",
+      "kind": "failure",
+      "message": "osd-04 rejoined the cluster",
+      "time": "2026-09-26T01:03:04.155Z"
+    },
+    {
+      "id": "2f97d4a6-793c-4b5d-a277-cb6f4900dd31",
+      "kind": "failure",
+      "message": "osd-03 rejoined the cluster",
+      "time": "2026-09-26T01:03:04.146Z"
+    },
+    {
+      "id": "6c199211-2d97-4e36-be6b-2401ca62213e",
+      "kind": "failure",
+      "message": "osd-02 rejoined the cluster",
+      "time": "2026-09-26T01:03:04.128Z"
+    },
+    {
+      "id": "6530c459-c537-4595-8eff-203ef8e099fe",
+      "kind": "failure",
+      "message": "osd-01 rejoined the cluster",
+      "time": "2026-09-26T01:03:04.113Z"
+    },
+    {
+      "id": "fab25730-54f4-49fe-8e1f-8190345f13f7",
+      "kind": "failure",
+      "message": "osd-05 went offline",
+      "time": "2026-09-26T01:03:04.094Z"
+    },
+    {
+      "id": "01b0221c-b9d3-496c-b126-8113e7c017b6",
+      "kind": "failure",
+      "message": "osd-04 went offline",
+      "time": "2026-09-26T01:03:04.068Z"
+    },
+    {
+      "id": "a48cd2b1-c413-4780-89d2-d504b6b0c9fc",
+      "kind": "failure",
+      "message": "osd-03 went offline",
+      "time": "2026-09-26T01:03:04.060Z"
+    },
+    {
+      "id": "358cb6aa-38b6-45b7-a126-64972896efee",
+      "kind": "failure",
+      "message": "osd-02 went offline",
+      "time": "2026-09-26T01:03:04.044Z"
+    },
+    {
+      "id": "3828949c-41f2-4b28-856a-826a355bf6f3",
+      "kind": "failure",
+      "message": "osd-01 went offline",
+      "time": "2026-09-26T01:03:04.025Z"
+    },
+    {
+      "id": "e55e2ef9-1c09-4f46-a30e-f974dab2ed03",
+      "kind": "write",
+      "message": "Complete package submitted: “Complete Onboarding Package” (Doc + Payment + Details) · 3 replicas · sha 926f68b0a23c18ea",
+      "time": "2026-09-26T01:03:03.978Z"
+    },
+    {
+      "id": "72105d56-3fa5-43f1-a141-49ba6bc5bb56",
+      "kind": "write",
+      "message": "Details submitted: Robert Vance · Client Profile · 3 replicas · sha bd9ad29703735bf8",
+      "time": "2026-09-26T01:03:03.945Z"
+    },
+    {
+      "id": "6cb759bd-19a8-480f-bf52-85f4c6ae7ebf",
+      "kind": "write",
+      "message": "Payment submitted: TX-778899 (450.00 USD via Wire Transfer) · receipt.png · 3 replicas · sha 355d93e7b5461ad8",
+      "time": "2026-09-26T01:03:03.916Z"
+    },
+    {
+      "id": "1589fdeb-5136-461b-8c0c-9fa4d6863b68",
+      "kind": "write",
+      "message": "Document submitted: “Passport Verification” · passport.pdf · 3 replicas · sha 4b1e1ce6d495bbc9",
+      "time": "2026-09-26T01:03:03.891Z"
+    },
+    {
+      "id": "f850b281-6358-4c17-98a4-6cffa1b1ef98",
+      "kind": "delete",
+      "message": "Deleted “test-object”",
+      "time": "2026-09-26T01:03:03.867Z"
+    },
+    {
+      "id": "b819e681-5ffb-4808-b610-22ccb706475f",
+      "kind": "verify",
+      "message": "Integrity scan · 6 checked · 0 mismatches",
+      "time": "2026-09-26T01:03:03.858Z"
+    },
+    {
+      "id": "fda104f6-bc4f-4b2e-a5b4-fea6c86fa2aa",
+      "kind": "repair",
+      "message": "Repair scan complete · all objects healthy",
+      "time": "2026-09-26T01:03:03.806Z"
+    },
+    {
+      "id": "73c0ede9-a192-441c-8256-7ca64bf2c3b5",
+      "kind": "failure",
+      "message": "osd-05 rejoined the cluster",
+      "time": "2026-09-26T01:03:03.755Z"
+    },
+    {
+      "id": "3ec63f61-3343-40e1-9d06-844d9a2ae148",
+      "kind": "failure",
+      "message": "osd-04 rejoined the cluster",
+      "time": "2026-09-26T01:03:03.668Z"
+    },
+    {
+      "id": "527f3e19-857c-4374-8e0c-8733d80c670a",
+      "kind": "failure",
+      "message": "osd-03 rejoined the cluster",
+      "time": "2026-09-26T01:03:03.663Z"
+    },
+    {
+      "id": "cc29170d-20a3-43df-977c-d4ded36cb82d",
+      "kind": "failure",
+      "message": "osd-02 rejoined the cluster",
+      "time": "2026-09-26T01:03:03.655Z"
+    },
+    {
+      "id": "f0e28b6f-912d-4f9b-85b4-010c1cc5dbb5",
+      "kind": "failure",
+      "message": "osd-01 rejoined the cluster",
+      "time": "2026-09-26T01:03:03.638Z"
+    },
+    {
+      "id": "c34d1f9d-2404-4be0-b90f-fd91330e33fc",
+      "kind": "failure",
+      "message": "osd-05 went offline",
+      "time": "2026-09-26T01:03:03.565Z"
+    },
+    {
+      "id": "0a2e6f58-c69d-45ca-bba4-791764b79b53",
+      "kind": "failure",
+      "message": "osd-04 went offline",
+      "time": "2026-09-26T01:03:03.546Z"
+    },
+    {
+      "id": "2919f70e-6bd5-4552-a488-f96600f6a7da",
+      "kind": "failure",
+      "message": "osd-03 went offline",
+      "time": "2026-09-26T01:03:03.538Z"
+    },
+    {
+      "id": "1be6fcc2-de1b-483e-b715-b1a3372a6822",
+      "kind": "failure",
+      "message": "osd-02 went offline",
+      "time": "2026-09-26T01:03:03.516Z"
+    },
+    {
+      "id": "d1108127-a9db-4822-bef8-6ddbab47b338",
+      "kind": "failure",
+      "message": "osd-01 went offline",
+      "time": "2026-09-26T01:03:03.507Z"
+    },
+    {
+      "id": "5fb5e718-459d-4dbb-bfe1-e317b7d247ec",
+      "kind": "write",
+      "message": "Updated “test-object” · 3 replicas · sha a67d5f46542514f5",
+      "time": "2026-09-26T01:03:03.460Z"
+    },
+    {
+      "id": "4343ccba-5572-48e9-bf2e-103dbb1db84e",
+      "kind": "read",
+      "message": "Read “test-object” · checksum verified",
+      "time": "2026-09-26T01:03:03.438Z"
+    },
+    {
+      "id": "6b8682b9-ec03-4cc0-a613-46bc5a15a5cf",
+      "kind": "write",
+      "message": "Stored “test-object” · 3 replicas · sha b126c6d66ec8e9e5",
+      "time": "2026-09-26T01:03:03.428Z"
+    },
+    {
+      "id": "d241d9be-2309-495d-9064-85e221da8959",
+      "kind": "delete",
+      "message": "Deleted submission “sub-all-54aa8b93” (everything)",
+      "time": "2026-09-26T00:16:46.072Z"
+    },
+    {
+      "id": "29d488f4-0781-4c1e-8b9a-ce5636d9a826",
+      "kind": "delete",
+      "message": "Deleted submission “sub-det-797b2adc” (details)",
+      "time": "2026-09-26T00:16:46.057Z"
+    },
+    {
+      "id": "a17da9ab-6362-45bf-8082-1466a54c7766",
+      "kind": "delete",
+      "message": "Deleted submission “sub-pay-85789047” (payment)",
+      "time": "2026-09-26T00:16:46.037Z"
+    },
+    {
+      "id": "8f379435-7edc-4d2b-a094-2341816a86fc",
+      "kind": "delete",
+      "message": "Deleted submission “sub-doc-47d0f5c3” (document)",
+      "time": "2026-09-26T00:16:46.022Z"
+    },
+    {
+      "id": "a7ecd884-82eb-49fe-9bf1-28ad3534e4ad",
+      "kind": "failure",
+      "message": "osd-05 rejoined the cluster",
+      "time": "2026-09-26T00:16:46.007Z"
+    },
+    {
+      "id": "8f3d3218-b0da-4e2d-9d6f-f4608af6a838",
+      "kind": "failure",
+      "message": "osd-04 rejoined the cluster",
+      "time": "2026-09-26T00:16:45.991Z"
+    },
+    {
+      "id": "48e3467e-f9a9-478e-a7f1-ed910a0f6cd6",
+      "kind": "failure",
+      "message": "osd-03 rejoined the cluster",
+      "time": "2026-09-26T00:16:45.981Z"
+    },
+    {
+      "id": "c3e23d31-8e14-4daa-ab8e-66037ac7bf19",
+      "kind": "failure",
+      "message": "osd-02 rejoined the cluster",
+      "time": "2026-09-26T00:16:45.978Z"
+    },
+    {
+      "id": "c89f0e19-e24d-430c-8c44-a756f395701f",
+      "kind": "failure",
+      "message": "osd-01 rejoined the cluster",
+      "time": "2026-09-26T00:16:45.974Z"
+    },
+    {
+      "id": "f4aa131f-0c3f-46a3-9f4e-5ffcb80538d9",
+      "kind": "failure",
+      "message": "osd-05 went offline",
+      "time": "2026-09-26T00:16:45.939Z"
+    },
+    {
+      "id": "0eef7b8b-b875-4afc-87e2-2d22f3d97ce7",
+      "kind": "failure",
+      "message": "osd-04 went offline",
+      "time": "2026-09-26T00:16:45.923Z"
+    },
+    {
+      "id": "ea095e83-6b53-42e9-9d72-07f12ea7edbd",
+      "kind": "failure",
+      "message": "osd-03 went offline",
+      "time": "2026-09-26T00:16:45.907Z"
+    },
+    {
+      "id": "47355440-34a9-4913-b450-253eb1ab0cbc",
+      "kind": "failure",
+      "message": "osd-02 went offline",
+      "time": "2026-09-26T00:16:45.888Z"
+    },
+    {
+      "id": "64c2b93d-410c-45bb-85ad-8fb44b1d7ff8",
+      "kind": "failure",
+      "message": "osd-01 went offline",
+      "time": "2026-09-26T00:16:45.877Z"
+    },
+    {
+      "id": "b28ff7df-e9c9-4694-ac87-db7db3249827",
+      "kind": "write",
+      "message": "Complete package submitted: “Complete Onboarding Package” (Doc + Payment + Details) · 3 replicas · sha e654901929ef816b",
+      "time": "2026-09-26T00:16:45.841Z"
+    },
+    {
+      "id": "d733e113-f88e-401e-8256-d2d582d38df9",
+      "kind": "write",
+      "message": "Details submitted: Robert Vance · Client Profile · 3 replicas · sha 4e21535ccccf8aed",
+      "time": "2026-09-26T00:16:45.824Z"
+    },
+    {
+      "id": "6701fa85-9f60-4ab1-88df-9f7743b88d5f",
+      "kind": "write",
+      "message": "Payment submitted: TX-778899 (450.00 USD via Wire Transfer) · receipt.png · 3 replicas · sha 7923f0eb591395f7",
+      "time": "2026-09-26T00:16:45.808Z"
+    },
+    {
+      "id": "4d7a5a11-db37-42a3-9641-0186eff0ec50",
+      "kind": "write",
+      "message": "Document submitted: “Passport Verification” · passport.pdf · 3 replicas · sha 6188cdb4840960f8",
+      "time": "2026-09-26T00:16:45.781Z"
+    },
+    {
+      "id": "bb6ea3b2-d614-4369-a754-d5fca583424e",
+      "kind": "delete",
+      "message": "Deleted “test-object”",
+      "time": "2026-09-26T00:16:45.757Z"
+    },
+    {
+      "id": "655a1dbd-1c27-40c8-8b7b-1a952e083538",
+      "kind": "verify",
+      "message": "Integrity scan · 6 checked · 0 mismatches",
+      "time": "2026-09-26T00:16:45.740Z"
+    },
+    {
+      "id": "4c03e9d6-5a21-4dd0-9bac-32eec50b89ac",
+      "kind": "repair",
+      "message": "Repair scan complete · all objects healthy",
+      "time": "2026-09-26T00:16:45.726Z"
+    },
+    {
+      "id": "90175e43-9f05-467f-afae-2a520a9cf7d3",
+      "kind": "failure",
+      "message": "osd-05 rejoined the cluster",
+      "time": "2026-09-26T00:16:45.705Z"
+    }
+  ],
+  "submissions": [
+    {
+      "id": "sub-all-1a6a773c",
+      "type": "everything",
+      "title": "Full Corporate Onboarding Bundle",
+      "document": {
+        "title": "Master Agreement",
+        "category": "Contract",
+        "notes": "",
+        "file": {
+          "name": "agreement.pdf",
+          "size": 52,
+          "type": "application/pdf",
+          "checksum": "24b54ad382417022",
+          "data": "data:application/pdf;base64,JVBERi0xLjQgYWdyZWVtZW50"
+        }
+      },
+      "payment": {
+        "reference": "TX-ALL-8899",
+        "amount": "15000.00",
+        "currency": "USD",
+        "method": "ACH Transfer",
+        "notes": "",
+        "file": null
+      },
+      "details": {
+        "fullName": "Global Logistics Corp",
+        "email": "billing@global-logistics.com",
+        "accountNumber": "CORP-8800",
+        "category": "Comprehensive Bundle",
+        "details": "",
+        "file": null
+      },
+      "checksum": "3af66bde1d39fa70",
+      "replicas": 3,
+      "healthy": true,
+      "objectId": "53f9d8c1-8154-4182-8df7-74541d562021",
+      "createdAt": "2026-09-26T01:04:43.071Z"
+    },
+    {
+      "id": "sub-det-46e143d4",
+      "type": "details",
+      "fullName": "Sarah Connor",
+      "email": "sarah@cyberdyne.org",
+      "accountNumber": "ACC-800",
+      "category": "Customer KYC",
+      "details": "Critical verification review",
+      "file": {
+        "name": "metadata.json",
+        "size": 61,
+        "type": "application/json",
+        "checksum": "3296247023e1126d",
+        "data": "data:application/json;base64,eyJzZWN1cml0eUxldmVsIjoiQSsifQ=="
+      },
+      "checksum": "dfe02404c6912b46",
+      "replicas": 3,
+      "healthy": true,
+      "objectId": "a07059b5-4cf2-45f3-9068-3186dba81537",
+      "createdAt": "2026-09-26T01:04:43.051Z"
+    },
+    {
+      "id": "sub-pay-0feb0d94",
+      "type": "payment",
+      "reference": "TX-998811",
+      "amount": "750.00",
+      "currency": "USD",
+      "method": "Wire Transfer",
+      "notes": "Q3 retainage payment",
+      "file": {
+        "name": "receipt.png",
+        "size": 34,
+        "type": "image/png",
+        "checksum": "dcddc87dfd1e0fa6",
+        "data": "data:image/png;base64,cG5nLWJ5dGVz"
+      },
+      "checksum": "1ca946bce66523b1",
+      "replicas": 3,
+      "healthy": true,
+      "objectId": "ec6703b9-6d4c-44f0-9395-2820ced48c44",
+      "createdAt": "2026-09-26T01:04:43.021Z"
+    },
+    {
+      "id": "sub-doc-8091307a",
+      "type": "document",
+      "title": "Certified Passport Scan",
+      "category": "Identification",
+      "notes": "Verified via national registry",
+      "file": {
+        "name": "passport.pdf",
+        "size": 68,
+        "type": "application/pdf",
+        "checksum": "6f1acea180d3a9a6",
+        "data": "data:application/pdf;base64,JVBERi0xLjQgbW9jayBwYXNzcG9ydCBiaW5hcnk="
+      },
+      "checksum": "17f5fc8e8b4d7e4d",
+      "replicas": 3,
+      "healthy": true,
+      "objectId": "cb578bd2-62ac-4688-8ad2-078b6b294a9c",
+      "createdAt": "2026-09-26T01:04:43.011Z"
+    },
+    {
+      "id": "sub-all-592938ed",
+      "type": "everything",
+      "title": "Comprehensive Package Submission",
+      "document": {
+        "title": "Attached Document",
+        "category": "Package Document",
+        "notes": "",
+        "file": null
+      },
+      "payment": {
+        "reference": "TX-435265",
+        "amount": "0.00",
+        "currency": "USD",
+        "method": "Credit Card",
+        "notes": "",
+        "file": null
+      },
+      "details": {
+        "fullName": "",
+        "email": "",
+        "accountNumber": "",
+        "category": "Comprehensive Bundle",
+        "details": "",
+        "file": null
+      },
+      "checksum": "680665cbaab0ddf6",
+      "replicas": 3,
+      "healthy": true,
+      "objectId": "72e75001-f7e2-45f7-ac4a-7c0329f96f76",
+      "createdAt": "2026-09-25T23:41:32.694Z"
+    },
+    {
+      "id": "sub-all-1abec47f",
+      "type": "everything",
+      "title": "Full Corporate Onboarding Bundle",
+      "document": {
+        "title": "Master Agreement",
+        "category": "Contract",
+        "notes": "",
+        "file": {
+          "name": "agreement.pdf",
+          "size": 52,
+          "type": "application/pdf",
+          "checksum": "24b54ad382417022",
+          "data": "data:application/pdf;base64,JVBERi0xLjQgYWdyZWVtZW50"
+        }
+      },
+      "payment": {
+        "reference": "TX-ALL-8899",
+        "amount": "15000.00",
+        "currency": "USD",
+        "method": "ACH Transfer",
+        "notes": "",
+        "file": null
+      },
+      "details": {
+        "fullName": "Global Logistics Corp",
+        "email": "billing@global-logistics.com",
+        "accountNumber": "CORP-8800",
+        "category": "Comprehensive Bundle",
+        "details": "",
+        "file": null
+      },
+      "checksum": "fb04885e585540de",
+      "replicas": 3,
+      "healthy": true,
+      "objectId": "4a48db53-946f-41a3-9f67-f7fb1c4cb354",
+      "createdAt": "2026-09-25T23:40:34.689Z"
+    },
+    {
+      "id": "sub-det-8d361b7a",
+      "type": "details",
+      "fullName": "Sarah Connor",
+      "email": "sarah@cyberdyne.org",
+      "accountNumber": "ACC-800",
+      "category": "Customer KYC",
+      "details": "Critical verification review",
+      "file": {
+        "name": "metadata.json",
+        "size": 61,
+        "type": "application/json",
+        "checksum": "3296247023e1126d",
+        "data": "data:application/json;base64,eyJzZWN1cml0eUxldmVsIjoiQSsifQ=="
+      },
+      "checksum": "ed0468fa7eae80ee",
+      "replicas": 3,
+      "healthy": true,
+      "objectId": "37488899-3c58-41de-9f3a-6c9c6368ef02",
+      "createdAt": "2026-09-25T23:40:34.683Z"
+    },
+    {
+      "id": "sub-pay-2406d4ab",
+      "type": "payment",
+      "reference": "TX-998811",
+      "amount": "750.00",
+      "currency": "USD",
+      "method": "Wire Transfer",
+      "notes": "Q3 retainage payment",
+      "file": {
+        "name": "receipt.png",
+        "size": 34,
+        "type": "image/png",
+        "checksum": "dcddc87dfd1e0fa6",
+        "data": "data:image/png;base64,cG5nLWJ5dGVz"
+      },
+      "checksum": "7a770a01f4951c0a",
+      "replicas": 3,
+      "healthy": true,
+      "objectId": "4e2632e9-330a-461b-8a47-d2c311bdd562",
+      "createdAt": "2026-09-25T23:40:34.665Z"
+    },
+    {
+      "id": "sub-doc-c67c0df1",
+      "type": "document",
+      "title": "Certified Passport Scan",
+      "category": "Identification",
+      "notes": "Verified via national registry",
+      "file": {
+        "name": "passport.pdf",
+        "size": 68,
+        "type": "application/pdf",
+        "checksum": "6f1acea180d3a9a6",
+        "data": "data:application/pdf;base64,JVBERi0xLjQgbW9jayBwYXNzcG9ydCBiaW5hcnk="
+      },
+      "checksum": "8bb14f3ed21297df",
+      "replicas": 3,
+      "healthy": true,
+      "objectId": "0c7eddfd-0fb7-4d8a-9e5d-f0ebb0eb84ce",
+      "createdAt": "2026-09-25T23:40:34.655Z"
+    }
+  ]
+}
